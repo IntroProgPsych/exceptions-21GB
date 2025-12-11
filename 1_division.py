@@ -25,3 +25,20 @@
 # Operation finished.
 
 # write your code here:
+
+numerator_input = input("Enter the numerator: ")
+denominator_input = input("Enter the denominator: ")
+
+try:
+    numerator = float(numerator_input)
+    denominator = float(denominator_input)
+    result = numerator / denominator
+except ValueError:
+    print("Error: You must enter numeric values.")
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")
+else:
+    print(f"Division successful! Result: {result}")
+finally:
+    print("Operation finished.")
+        
