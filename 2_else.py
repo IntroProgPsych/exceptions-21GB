@@ -22,3 +22,14 @@
 # Attempt finished.
 
 # write your code here:
+
+number_input = input("Enter an integer: ")
+
+try:
+    number = int(number_input)
+except:
+    print("Error: That is not an integer.")
+else:
+    print("Conversion successful!")
+finally:
+    print("Attempt finished.")
